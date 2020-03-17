@@ -10,6 +10,19 @@ puts
 puts "This program will take input from the user and compare to stored values."
 puts "If the password is correct, you'll get the user object returned!"
 
+# Create authenticator function
+
+def auth_user(username, password, list_of_users)
+
+	list_of_users.each do |name|
+		if name[:username] == username && name[:password] == password
+			return name
+		end
+	end
+	
+	return "Wrong userame or password."
+end
+
 # Loop through users
 i = 0
 
@@ -17,8 +30,7 @@ while i < 3
 
 	if i != 0
 		
-		# Present error and exit choice if a login failed
-		puts "Wrong username or password."
+		# Present exit choice if a login failed
 		puts "Press q to quit, or any other key to continue..."
 		user_decision = gets.chomp
 		
@@ -29,18 +41,14 @@ while i < 3
 	end
 
 	# Get user input
-	puts "Username:"
+	print "Username: "
 	var_user = gets.chomp
-	puts "Password:"
+	print "Password: "
 	var_pass = gets.chomp
 
 	# Iterate through users
-	users.each do |name|
-		if name[:username] == var_user && name[:password] == var_pass
-			puts name
-			exit
-		end
-	end
+	result = auth_user(var_user, var_pass, users)
+	puts result
 	
 	# Increment counter
 	i += 1
