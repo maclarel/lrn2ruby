@@ -1,0 +1,25 @@
+To add an About page to the application, first add the following route to the config/routes.rb folder:
+
+get 'about', to: 'pages#about'
+
+You can then add the about action to the pages controller like below:
+
+def about
+end
+Now you will need a view template, so add an about.html.erb file under the app/views/pages folder and fill in some text to display within it:
+
+<h1>This is the About page</h1>
+
+Once you save the file, you'll be able to preview this page by appending /about to your homepage. In your local machine it would be localhost:3000/about
+
+Homework:
+
+1. Create an alpha-blog application.
+
+2. Setup tracking with Git and make a commit of your code with the message "Initial commit". Set up a GitHub repository for the app.
+
+3. Create a home page view (as the root route) and an about page like the test app.
+
+4. Make sure you are able to start the server and preview the application. Take snapshots of the two pages (home and about) and post them to the Q & A.
+
+5. Make a commit of your code and push to your GitHub repository for the application.

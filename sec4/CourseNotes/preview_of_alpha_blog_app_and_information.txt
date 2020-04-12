@@ -1,0 +1,7 @@
+Preview of the app moved to section 1, lecture 11, please take a look at section 1 lecture 11 to preview this app.
+
+The github repo's for the completed apps using Rails 4 and Rails 5 are provided below:
+
+Rails 4.2.5: https://github.com/udemyrailscourse/alpha-blog-11-2017-4.2.5
+
+Rails 5.1.4: https://github.com/udemyrailscourse/alpha-blog-11-2017-5.1.4
