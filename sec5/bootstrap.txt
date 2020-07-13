@@ -1,0 +1,16 @@
+You can find the blog post to add Bootstrap and it's dependencies in your application here: https://www.mashrurhossain.com/blog/rails6bootstrap4
+
+Remember to update version 4.3.1 to whatever Bootstrap version you want to use. (In the post it's 4.3.1, in the video I used 4.4.1)
+
+You can find all the code changes I made in this video here: https://github.com/udemyrailscourse/alpha-blog-6/commit/3cf2925664761c697c156ecf7687721086071adc
+
+You can ignore the changes in the package.json and yarn.lock files in the commit since they are done automatically during the installation process.
+
+The code added to make your app understand jquery and popper extensions in the config/webpack/environment.js file is listed below:
+
+const webpack = require("webpack")
+environment.plugins.append("Provide", new webpack.ProvidePlugin({
+  $: 'jquery',
+  jQuery: 'jquery',
+  Popper: ['popper.js', 'default']
+}))

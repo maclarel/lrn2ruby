@@ -1,0 +1,1 @@
+All the code changes made in the previous video can be found here: https://github.com/udemyrailscourse/alpha-blog-6/commit/404a3125e2bd8c28c461f20b99add19143dc616c

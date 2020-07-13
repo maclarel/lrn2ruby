@@ -1,0 +1,3 @@
+All the code changes made in the previous video to add Home page styling can be found here: https://github.com/udemyrailscourse/alpha-blog-6/commit/8f3ef132836225f566c705e6434ab39cc9c338b2
+
+You can skip the changes to the README.md file since that was just used in the video for display purposes.
