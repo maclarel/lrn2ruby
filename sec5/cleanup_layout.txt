@@ -1,0 +1,12 @@
+The code changes made in the previous video can be found here: https://github.com/udemyrailscourse/alpha-blog-6/commit/3300be837f9591066e918cd700807018d7f1164c
+
+To deploy your application to heroku, first ensure you have checked git status and that all your changes have been committed to your git repo. If there are untracked/uncommitted changes then follow the usual commit route:
+
+$ git add -A
+$ git commit -m "Appropriate commit message"
+$ git push origin master # to deploy to your GitHub or other code repo
+Then deploy your changes to heroku and run any pending migrations there:
+
+$ git push heroku master
+.....after deployment completes successfully....
+$ heroku run rails db:migrate

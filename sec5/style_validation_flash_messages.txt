@@ -1,0 +1,7 @@
+To remove the field_with_errors functionality, add the following code to the bottom of the config/environment.rb file:
+
+ActionView::Base.field_error_proc = Proc.new do |html_tag, instance|
+  html_tag.html_safe
+end
+
+The code changes made in the previous video can be found here: https://github.com/udemyrailscourse/alpha-blog-6/commit/0cc39c1815eff9e591356066ed06f518ed7f9ec8
