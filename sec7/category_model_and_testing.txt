@@ -1,0 +1,13 @@
+Code changes made during the previous video can be found here (please ignore changes to the schema file which happen automatically once the migration file runs): https://github.com/udemyrailscourse/alpha-blog-6/commit/8f207aa1d5f7239aea7aff88ee07fd171451cfce
+
+Summary of changes:
+
+- Created category_test test file and wrote a test to check for the validity of a newly created category object
+
+- Ran failing test
+
+- Added category model
+
+- Added categories table
+
+- Ran passing test

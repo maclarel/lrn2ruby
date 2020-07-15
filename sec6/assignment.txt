@@ -1,0 +1,6 @@
+Solution code to the assignment can be found here: https://github.com/udemyrailscourse/alpha-blog-6/commit/70e4fe8682b791be8365ba45545928da7acb6dec
+
+Summary: Embed ruby code in place of hard-coded 'success' in the messages partial. 'success' is returned if the key ('name') from the flash hash is 'notice' and 'danger' is returned otherwise. This gives the alert message the green or red color depending on the notice type.
+
+
+    <div class="alert alert-<%= name == "notice" ? "success" : "danger" %> alert-dismissible fade show" role="alert">

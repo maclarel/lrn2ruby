@@ -1,0 +1,21 @@
+To deploy your app to heroku, first check git status to ensure you don't have any uncommitted code, if you do, make a commit.
+
+Then deploy to heroku:
+
+$ git push heroku master
+
+Then run any pending migrations in heroku:
+
+$ heroku run rails db:migrate
+
+Dont forget to post a link to your heroku app in the discussion area! This step is very important since others will get to see your app and get inspired/test.
+
+Homework assignment:
+
+1. Create integration test for signing up a user.
+
+2. Create integration test for creating a new article.
+
+You can reference the integration tests for creating and listing categories as a guide, post your tests to the discussions area or post a link to your GitHub repo.
+
+Congratulations on completing section 7!

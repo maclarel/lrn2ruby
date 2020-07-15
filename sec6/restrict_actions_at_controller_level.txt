@@ -1,0 +1,21 @@
+Articles
+
+Code changes/updates made during the previous video can be found here: https://github.com/udemyrailscourse/alpha-blog-6/commit/feef5054f1dacdd4d3fcbab91325cb900b5538ce
+
+Summary of changes:
+
+- Added require user method in application controller.
+
+- Added require same user private method in articles controller.
+
+- Used the two methods defined above as before_action methods in a few actions to restrict activities in the articles controller.
+
+Users
+
+Code changes made during the previous video can be found here: https://github.com/udemyrailscourse/alpha-blog-6/commit/419ae8a9c26bb4895966816cb0be46bb0a306570
+
+Summary of changes:
+
+- Added require_same_user method to users controller.
+
+- Used require_same_user and require_user methods to restrict certain actions in the users controller.
