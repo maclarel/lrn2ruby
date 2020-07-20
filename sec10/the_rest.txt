@@ -1,0 +1,101 @@
+Skipping remaining sections as they are prod specific, using S3 as an image store, however this requires adding a credit card on file with multiple services, so this won't be covered through my work/notes.
+
+---
+
+In your picture_uploader.rb file under app/uploaders folder, replace the line that says storage :file with the following:
+
+if Rails.env.production?
+
+storage :fog
+
+else
+
+storage :file
+
+end
+
+Sign up for Amazon web services at aws.amazon.com
+
+Follow the video exactly as shown:
+
+1) Create IAM user
+
+2) Create S3 bucket
+
+3) Create policy with s3 bucket details
+
+4) Attach policy to IAM user created
+
+Here is a sample policy, replace the code with your s3 bucket name as needed below:
+
+{
+
+"Version": "2012-10-17",
+
+"Statement": [
+
+{
+
+"Effect": "Allow",
+
+"Action": "s3:*",
+
+"Resource": [
+
+"arn:aws:s3:::yours3bucketname",
+
+"arn:aws:s3:::yours3bucketname/*"
+
+]
+
+},
+
+{
+
+"Effect": "Allow",
+
+"Action": "s3:ListAllMyBuckets",
+
+"Resource": "arn:aws:s3:::*"
+
+}
+
+]
+
+}
+
+
+---
+
+
+Set your credentials for amazon IAM user and S3 bucket with heroku:
+
+heroku config:set S3_ACCESS_KEY=youraccesskeyforIAMuser
+
+heroku config:set S3_SECRET_KEY=yoursecretykeyforIAMuser
+
+heroku config:set S3_BUCKET=yours3bucketname
+
+Under config/initializers folder create a file called carrier_wave.rb and fill it in:
+
+if Rails.env.production?
+
+CarrierWave.configure do |config|
+
+config.fog_credentials = {
+
+:provider => 'AWS',
+
+:aws_access_key_id => ENV['S3_ACCESS_KEY'],
+
+:aws_secret_access_key => ENV['S3_SECRET_KEY']
+
+}
+
+config.fog_directory = ENV['S3_BUCKET']
+
+end
+
+end
+
+Do a commit of your code, push to github, deploy to heroku, run any pending migrations and test it out!
