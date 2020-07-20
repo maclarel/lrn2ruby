@@ -1,0 +1,25 @@
+Preview video of material covered in this section moved to section 1, lecture 13, you can take a look at the video at this time if you choose.
+
+Some very important items to note before you start this section are listed below:
+
+1) At this point, you have a pretty strong understanding of Rails basics, and can make virtually any app work with time/reading documents and trial/error. Therefore, code will be written faster with less explanations.
+
+2) From this point on and with this app, we will write a lot of code which in the beginning will "make no sense" and also seem like I'm "typing away" without explanation, especially when we get to the stripe and javascript part. It is ok to feel lost here and follow/type along because:
+
+a. Most of that code is provided by the third party provider, for example: code for stripe is provided by stripe in examples. Sometimes these examples are used with devise (another tool/gem) examples to make a specific version of the code work. This syntax will sometimes look different from what we have used, but again, that will be because that is syntax provided by the tool/gem creators.
+
+b. What's important to remember is the overall flow. A lot of code used is also searched on google then implemented using trial and error. The science part is in the understanding of the overall picture so if you had to re-produce it you could also experiment and make it work. Since we'll be using API's and such, it's more of a "do as they say" type scenario, thus copy/pasting is ok, as long as you keep the overall flow/picture in mind. It's not important to understand every line of code in this app but be able to apply the code.
+
+3) Javascript will not be explained since it's not a javascript course. However, as long as you have the idea of what the code is used for in mind (since the code will be provided), you'll find the code pretty concise and easily usable/re-usable.
+
+4) In conclusion - you're in a part of the course now which will look like how real world development looks like - get a task - research - apply - trial/error - re-apply till it works. So it can be a bit frustrating at times. But it's important to remember that this is necessary for growth as a developer. Now you already have all the basics in place - it's a matter of taking it to the next level which means -
+
+a. A lot of research. When errors are hit, researching them using google/stack overflow, being able to resolve them on your own
+
+b. Upgrades - as upgrades of gems/code become necessary - being able to look them up. Being able to resolve issues by trying/re-trying - research
+
+c. Collaboration! join other students in the live chat or through the Q & A and work on the item together
+
+d. Try your own versions, experiment!
+
+Good luck and enjoy!

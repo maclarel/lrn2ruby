@@ -1,0 +1,41 @@
+The two main items we aim to learn by the conclusion of this section are:
+
+- How to use a different front-end UI like Semantic UI with Rails applications (or in general) instead of Bootstrap.
+
+- How to use ActionCable to implement real-time features in Rails apps (we will demonstrate using a chat application).
+
+Recommendations for versions of Rails and development environment used in this section:
+
+- The MessageMe chat app built in this section uses Rails 5.1.6, therefore, I would strongly recommend using a version of Rails between Rails 5.1.6 and Rails 5.2.4 for this section to have the smoothest experience and alignment with the videos.
+
+- Atom will be used as the text editor and the development will be done locally in a Mac machine, however, you can use AWS Cloud9 or Windows as well.
+
+- For local installation options, and launching a Rails 5 application while you have Rails 6 installed, are covered in the following sections:
+
+If using MacOS - Section 13
+
+If using AWS Cloud9 - Section 14
+
+If using Windows - Section 15
+
+How this section is designed (and different):
+
+- Each video has an associated commit in the Github repository of the app. You can find each commit here: https://github.com/udemyrailscourse/message_me/commits/master
+
+- Simply select the name of the video/section from the commit message and you will be able to view all the code changes made in that video.
+
+- You will be assigned tasks regarding topics which have already been covered (or you are able to figure out). This is done on purpose to simulate more of a real-life web developer/development scenario you may face at a job.
+
+- We will cover design of the front-end first - then move on to the back-end.
+
+Expectations before you get started with this section:
+
+- You are able to install and use different versions of Rails. Optional (but strongly recommended): You are able to install Rails locally in your machine (either Windows, Mac or Linux).
+
+- You are able to build a simple authentication system using the default Rails stack. There are assignments in this section which will ask you to do this. If you are unable to do so you may feel left behind, I recommend either reviewing the authentication system of alpha blog or the authentication system in the University App (last app before the installation sections in this course).
+
+- You know what Git and Github are, and are able to use them at a basic level.
+
+What if you are not interested in learning about ActionCable, or building a realtime Chat App, but want to either learn a new front-end framework in a typical RESTful Rails application, or other fun new things?
+
+- If you fall in this category then you can skip this section and either move on to the last app (last app before the installation sections in this course) where we build a university app to learn how to use MaterializeCSS instead of Bootstrap in a Rails app, or, you can continue on to the next app where we build a Finance Tracker app using Rails 6 and learn some new cool things.

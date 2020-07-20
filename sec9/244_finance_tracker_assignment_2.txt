@@ -1,0 +1,15 @@
+ASSIGNMENT:
+
+1. Create a homepage for your application using a root route. You may name your controller welcome controller and the action your index action.
+
+2. Push your updated code to your Github repository so it's saved. (After making a commit of course)
+
+3. Re-organize your Gemfile to put sqlite3 gem in group development, and create group production with the pg gem.
+
+4. Make a commit of your code
+
+5. Create a Heroku app for your application and deploy it to production. Refer to Heroku app docs to see if there are any latest changes you need to be aware of in deploying Rails applications in the platform.
+
+6. Post a link to your Heroku app page in the discussions
+
+7. IMPORTANT: Don't proceed to the next video unless you're able to get the above working. It is necessary that you are able to perform the tasks above and the videos going forward will make this assumption (You can reference the alpha-blog videos for help at any time). If you want to skip production deploy with Heroku, then you can skip those steps, but you have to at least get a root route/view working.
